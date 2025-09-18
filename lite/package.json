@@ -1,0 +1,25 @@
+{
+  "name": "baseline-browser-mapping-lite",
+  "version": "1.0.0",
+  "description": "A lite version of baseline-browser-mapping that provides browser version compatibility data.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "package.json"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.0.4",
+    "rollup": "^4.44.0",
+    "@rollup/plugin-typescript": "^12.1.3",
+    "@rollup/plugin-json": "^6.1.0",
+    "tslib": "^2.8.1",
+    "@rollup/plugin-terser": "^0.4.4"
+  }
+}
