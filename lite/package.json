@@ -1,9 +1,16 @@
 {
   "name": "baseline-browser-mapping-lite",
+  "main": "./dist/index.cjs",
   "version": "1.0.0",
   "description": "A lite version of baseline-browser-mapping that provides browser version compatibility data.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
   "type": "module",
   "scripts": {
     "build": "rollup -c",
